@@ -1,0 +1,2 @@
+﻿#- PowerShell script that displays a list of all processes running with either the name pwsh, google chrome.
+Get-Process | Where-Object {$_.ProcessName -like "*chrome*" -or $_.ProcessName -like "*powershell*"}
